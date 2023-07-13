@@ -1,0 +1,35 @@
+/* Скрыть меню */
+
+nav ul {
+    display: none;
+}
+
+
+/* Отображение меню при клике на иконку */
+
+nav .icon {
+    background-color: #555;
+    display: block;
+    cursor: pointer;
+    padding: 8px;
+}
+
+nav ul li {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Показать меню на разрешении экрана менее 768px */
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    nav .icon {
+        display: block;
+    }
+    nav ul.show {
+        display: block;
+    }
+}
